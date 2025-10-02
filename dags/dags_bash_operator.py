@@ -3,7 +3,7 @@ from airflow.providers.standard.operators.bash import BashOperator
 from airflow.sdk import DAG, chain
 
 with DAG(
-    dag_id="example_complex",
+    dag_id="dags_bash_operator",
     schedule=None,
     start_date=pendulum.datetime(2025, 10, 2, tz="UTC"),
     catchup=False,
