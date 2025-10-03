@@ -12,7 +12,7 @@ with DAG(
 ) as dag:
     def select_fruit():
         fruit = ['APPLE','BANANA', 'ORANGE']
-        rend_int = random.randint(0,3)
+        rand_int = random.randint(0,3)
         print(fruit[rand_int])
     
     py_t1 = PythonOperator(
@@ -21,3 +21,4 @@ with DAG(
     )
 
     py_t1
+
